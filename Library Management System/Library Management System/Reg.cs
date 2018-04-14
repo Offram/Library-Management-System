@@ -170,5 +170,56 @@ namespace Library_Management_System
             else if (txt_tp.Text.Length == 0)
                 error_tp.SetError(txt_tp, "Telephone Number is required");
         }
+
+        private void txt_nic_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(e.KeyChar.ToString(), @"[^0-9^v]") && !(e.KeyChar == (char)8))
+            {
+                // Stop the character from being entered into the control since it is illegal.
+                e.Handled = true;
+            }
+        }
+
+        private void txt_pc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(e.KeyChar.ToString(), @"[^0-9]") && !(e.KeyChar == (char)8))
+            {
+                // Stop the character from being entered into the control since it is illegal.
+                e.Handled = true;
+            }
+        }
+
+        private void txt_fname_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && !(char.IsControl(e.KeyChar)))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_lname_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && !(char.IsControl(e.KeyChar)))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_fullname_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsLetter(e.KeyChar)) && !(char.IsWhiteSpace(e.KeyChar)) && !(char.IsControl(e.KeyChar)))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_tp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(e.KeyChar.ToString(), @"[^0-9]") && !(char.IsControl(e.KeyChar)))
+            {
+                // Stop the character from being entered into the control since it is illegal.
+                e.Handled = true;
+            }
+        }
     }
 }

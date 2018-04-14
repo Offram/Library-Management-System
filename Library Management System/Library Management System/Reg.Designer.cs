@@ -147,6 +147,7 @@
             this.txt_fname.Size = new System.Drawing.Size(256, 22);
             this.txt_fname.TabIndex = 11;
             this.txt_fname.TextChanged += new System.EventHandler(this.txt_fname_TextChanged);
+            this.txt_fname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_fname_KeyPress);
             // 
             // txt_lname
             // 
@@ -155,6 +156,7 @@
             this.txt_lname.Size = new System.Drawing.Size(256, 22);
             this.txt_lname.TabIndex = 12;
             this.txt_lname.TextChanged += new System.EventHandler(this.txt_lname_TextChanged);
+            this.txt_lname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_lname_KeyPress);
             // 
             // txt_fullname
             // 
@@ -163,6 +165,7 @@
             this.txt_fullname.Size = new System.Drawing.Size(256, 22);
             this.txt_fullname.TabIndex = 13;
             this.txt_fullname.TextChanged += new System.EventHandler(this.txt_fullname_TextChanged);
+            this.txt_fullname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_fullname_KeyPress);
             // 
             // txt_pc
             // 
@@ -171,6 +174,7 @@
             this.txt_pc.Size = new System.Drawing.Size(273, 22);
             this.txt_pc.TabIndex = 14;
             this.txt_pc.TextChanged += new System.EventHandler(this.txt_pc_TextChanged);
+            this.txt_pc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_pc_KeyPress);
             // 
             // txt_id
             // 
@@ -232,6 +236,7 @@
             this.txt_tp.TabIndex = 16;
             this.txt_tp.Text = "";
             this.txt_tp.TextChanged += new System.EventHandler(this.txt_tp_TextChanged);
+            this.txt_tp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_tp_KeyPress);
             // 
             // label12
             // 
@@ -258,6 +263,7 @@
             this.txt_nic.Size = new System.Drawing.Size(203, 22);
             this.txt_nic.TabIndex = 20;
             this.txt_nic.TextChanged += new System.EventHandler(this.txt_nic_TextChanged);
+            this.txt_nic.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nic_KeyPress);
             // 
             // label14
             // 
